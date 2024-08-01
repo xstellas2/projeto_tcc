@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+<body>
+
+    {% block title %}Sobre nós{% endblock %}
+    {% block main %}
+
+    <main>
+        <div class="conteudo-sn mx-5">
+            <div class="row mx-3">
+                <!-- Coluna da esquerda com vantagens -->
+                <div class="col-md-6">
+                    <h2 class="mb-6 my-5" style="align-items: start;">Sobre o site</h2>
+                    <p style="text-align: left;">O site PragaZero foi desenvolvido através de um projeto integrador do curso de informática do IFRN -
+                        Campus Pau dos Ferros. Com o objetivo de facilitar o acesso de pequenos e médios agricultores rurais
+                        à
+                        informações de possíveis causas relacionadas à grande quantidade de pragas na agricultura e do
+                        combate
+                        efetivo das mesmas, promovendo uma conscientização sobre o controle biológico. <br>
+                        Promovendo um site que
+                        reúna informações verídicas e mais relevantes sobre o combate e controle de pragas na agricultura,
+                        visamos o aumento da produção e o fortalecimento da agricultura familiar.</p>
+                </div>
+
+                <div class="col-md-4"></div>
+
+                <div class="col-md-2">
+                    <img class="my-3 mt-4" src="{{ url_for('static', filename='img/image 13.png') }}" alt="">
+                    <img class="my-3" src="{{ url_for('static', filename='img/image 11.png') }}" alt="">
+                    <img class="my-3" src="{{ url_for('static', filename='img/image 12.png') }}" alt="">
+                </div>
+
+            </div>
+
+            <div class="row mx-5 pb-5">
+                <!-- Coluna da esquerda com vantagens -->
+                <div class="col-md-4">
+                    <img class="img-sn my-3" src="{{ url_for('static', filename='img/aurea.jpg') }}" alt="">
+                    <img class="img-sn my-3" src="{{ url_for('static', filename='img/thicy.jpg') }}" alt="">
+                    <img class="img-sn my-3" src="{{ url_for('static', filename='img/stella.jpg') }}" alt="">
+                    <img class="img-sn my-3" src="{{ url_for('static', filename='img/evelyn.jpg') }}" alt="">
+
+                </div>
+
+                <div class="col-md-2"></div>
+
+                <div class="col-md-6">
+                    <h2 class="mb-6 my-5" style="text-align: right;">Sobre as criadoras</h2>
+                    <p style="text-align: right;">Maria Stella Teodoro, Thiciany Maria Lima Custódio, Evellyn Thauany Alves de Lima e Áurea Karla
+                        Bezerra e Cunha são estudantes de informática do IFRN - Campus Pau dos Ferros, ambas têm 17 anos
+                        e são cearense e potiguares.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    {% endblock %}
+
+</body>
+</html>
